@@ -7,25 +7,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Interactive quiz game</h1>
-        <div id="quiz-box">
-            <div id="question">Loading...</div>
-            <div id="options"></div>
-            <div id="navigations" class="navigations">
-                <div id="prev">Previous</div>
-                <div id="next">Next</div>
-                <div id="end">End Quiz</div>
-                <div id="restart" style="display: none;">Restart</div>
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">My projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Interactive quiz game app</h3>
+                    <p>A simple quiz game built using HTML,CSS,&JavaScript</p>
+                    <div id="quiz-container" class="quiz-container">
+                        <div id="quiz-box">
+                            <h2 id="question">Loading...</h2>
+                            <div id="options"></div>
+                            <div id="navigation" class="navigation">
+                                <button id="prev">Previous</button>
+                                <button id="next">Next</button>
+                                <button id="end">Quit</button>
+                            </div>
+                            <p id="score-box">score: 0</p>
+                            <p id="timer">Time left: 60s</p>
+                            <button id="restart" style="display: none;"class="restart">Restart App</button>
+                        </div>
 
-            </div>
-            <div id="score-box">Score: 0</div>
-            <div id="timer">Time Left: 60s</div>
-            
-
-
-        </div>
     </div>
-    <script src="script.js"></script>
+        <script src="script.js"></script>
 </body>
 </html>
